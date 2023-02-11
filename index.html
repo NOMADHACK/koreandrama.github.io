@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-YOUR-ADMOB-PUBLISHER-ID",
+        enable_page_level_ads: true
+      });
+    </script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <h1>My Website</h1>
+    </header>
+    
+    <!-- main content section -->
+    <main>
+      <p>Welcome to my website!</p>
+    </main>
+    
+    <!-- AdMob interstitial -->
+    <script>
+      function showAd() {
+        var ad = document.createElement("ins");
+        ad.className = "adsbygoogle";
+        ad.style.display = "block";
+        ad.style.width = "100%";
+        ad.style.height = "100%";
+        ad.setAttribute("data-ad-client", "ca-app-pub-7307363507886301~2645228066");
+        ad.setAttribute("data-ad-slot", "ca-app-pub-7307363507886301/7130227979");
+        ad.setAttribute("data-ad-format", "auto");
+        ad.setAttribute("data-full-width-responsive", "true");
+        document.body.appendChild(ad);
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      }
+    </script>
+    
+    <!-- trigger for interstitial -->
+    <button onclick="showAd()">Show Ad</button>
+    
+    <!-- footer section -->
+    <footer>
+      <p>Copyright &copy; My Website</p>
+    </footer>
+  </body>
+</html>
